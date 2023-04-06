@@ -15,6 +15,7 @@ To install the library, use the following command:
 
 ```bash
 pip install git+https://github.com/cywei23/ForecastFlow.git
+```
 
 ## Usage
 import pandas as pd
