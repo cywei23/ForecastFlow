@@ -18,17 +18,19 @@ pip install git+https://github.com/cywei23/ForecastFlow.git
 ```
 
 ## Usage
+```python
 import pandas as pd
 from your_library import handle_missing_data, feature_extraction, model_evaluation, forecasting_models
 
-### Load and preprocess data
+# Load and preprocess data
 data = pd.read_csv('your_data.csv', index_col='date', parse_dates=True)
 handle_missing_data(data, method='interpolation')
 
-### Extract features
+# Extract features
 features = feature_extraction(data)
 
-### Train and evaluate models
+# Train and evaluate models
 model = forecasting_models.ARIMA(data)
 predictions = model.forecast(steps=10)
 error = model_evaluation(predictions, data)
+```
